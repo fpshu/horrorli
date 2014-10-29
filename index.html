@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+	<head>
+		<!--
+
+		changelog
+		- 2014.01.29.
+			+added opera support (ogg file formats)
+		- 2014.01.28.
+			*first release
+		
+		-->
+		
+		<meta charset="UTF-8">
+		<title>horrorli - your horror background noise generator</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<meta name="description" content="horrorli - your horror background noise generator">
+		<meta name="author" content="fps webagency">
+
+		<meta name="viewport" content="user-scalable=no, width=device-width, minimum-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-mobile-web-app-title" content="horrorli">
+
+		<meta property="og:title" content="horrorli">
+		<meta property="og:description" content="your horror background noise generator">
+		<meta property="og:url" content="http://horrorli.fps.hu">
+		<meta property="og:image" content="http://horrorli.fps.hu/img/appicons/horrorli.png">
+
+		<link href="http://horrorli.fps.hu/img/appicons/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed">
+		<link href="http://horrorli.fps.hu/img/appicons/apple-touch-icon-76x76-precomposed.png" rel="apple-touch-icon-precomposed" sizes="76x76">
+		<link href="http://horrorli.fps.hu/img/appicons/apple-touch-icon-120x120-precomposed.png" rel="apple-touch-icon-precomposed" sizes="120x120">
+		<link href="http://horrorli.fps.hu/img/appicons/apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon-precomposed" sizes="152x152"> 
+
+		<!--[if lt IE 9]>
+		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+		<script type="text/javascript" src="js/jquery.jplayer.fade.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+		<script type="text/javascript">stLight.options({publisher: "930694dd-0427-4ddc-8334-bdabb83ff9c5", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+		
+		<!-- version 1.0 -->
+	</head>
+	<body>
+	
+		<div id="wrapper">
+
+			<div id="head">
+				<h1>horrorli
+					<span class="blood one"><!-- blood --></span>
+					<span class="blood two"><!-- blood --></span>
+					<span class="blood three"><!-- blood --></span>
+				</h1>
+			</div>
+			
+			<hr />
+			
+			<div id="share">
+				<span class='st_facebook_hcount' st_url="http://horrorli.fps.hu/" displayText='Facebook' st_title='horrorli - your horror background noise generator'></span>
+				<span class='st_twitter_hcount' st_url="http://horrorli.fps.hu/" displayText='Tweet'st_title='horrorli - your horror background noise generator via @fpshu'></span>
+				<span class='st_plusone_hcount' st_url="http://horrorli.fps.hu/" displayText='Google +1' st_title='horrorli - your horror background noise generator'></span>
+			</div>
+
+			<div class="sound">
+				<div id="sound1"></div>
+				<div id="cover1" class="cover" data-title=''>
+					<img src="img/cover/13.svg" alt="Purgatory" />
+				</div>
+				<div class="jp-gui_1 gui">
+					<div class="slider" id="slider1"></div>
+				</div>
+			</div>
+			
+			<div class="sound">
+				<div id="sound2"></div>
+				<div id="cover2" class="cover" data-title=''>
+					<img src="img/cover/10.svg" alt="Dead souls" />
+				</div>
+				<div class="jp-gui_2 gui">
+					<div class="slider" id="slider2"></div>
+				</div>
+			</div>
+			
+			<div class="sound">
+				<div id="sound3"></div>
+				<div id="cover3" class="cover" data-title=''>
+					<img src="img/cover/04.svg"  alt="Zombies" />
+				</div>
+				<div class="jp-gui_3 gui">
+					<div class="slider" id="slider3"></div>
+				</div>
+			</div>
+			
+			<div class="sound">
+				<div id="sound4"></div>
+				<div id="cover4" class="cover" data-title=''>
+					<img src="img/cover/02.svg" alt="Crows" />
+				</div>
+				<div class="jp-gui_4 gui">
+					<div class="slider" id="slider4"></div>
+				</div>
+			</div>
+			
+			<div class="sound">
+				<div id="sound5"></div>
+				<div id="cover5" class="cover" data-title=''>
+					<img src="img/cover/03.svg" alt="Singing girls" />
+				</div>
+				<div class="jp-gui_5 gui">
+					<div class="slider" id="slider5"></div>
+				</div>
+			</div>
+			
+			<div class="sound">
+				<div id="sound6"></div>
+				<div id="cover6" class="cover" data-title=''>
+					<img src="img/cover/01.svg" alt="Swing" />
+				</div>
+				<div class="jp-gui_6 gui">
+					<div class="slider" id="slider6"></div>
+				</div>
+			</div>
+			
+			<div class="sound">
+				<div id="sound7"></div>
+				<div id="cover7" class="cover" data-title=''>
+					<img src="img/cover/14.svg" alt="Haunted place" />
+				</div>
+				<div class="jp-gui_7 gui">
+					<div class="slider" id="slider7"></div>
+				</div>
+			</div>
+			
+			<div class="sound">
+				<div id="sound8"></div>
+				<div id="cover8" class="cover" data-title=''>
+					<img src="img/cover/09.svg" alt="Church" />
+				</div>
+				<div class="jp-gui_8 gui">
+					<div class="slider" id="slider8"></div>
+				</div>
+			</div>
+			
+			<div class="sound">
+				<div id="sound9"></div>
+				<div id="cover9" class="cover" data-title=''>
+					<img src="img/cover/11.svg" alt="Whispering" />
+				</div>
+				<div class="jp-gui_9 gui">
+					<div class="slider" id="slider9"></div>
+				</div>
+			</div>
+			
+			<div class="sound">
+				<div id="sound10"></div>
+				<div id="cover10" class="cover" data-title=''>
+					<img src="img/cover/06.svg" alt="Neon lights" />
+				</div>
+				<div class="jp-gui_10 gui">
+					<div class="slider" id="slider10"></div>
+				</div>
+			</div>
+			
+			<div class="sound">
+				<div id="sound11"></div>
+				<div id="cover11" class="cover" data-title=''>
+					<img src="img/cover/12.svg" alt="Fear" />
+				</div>
+				<div class="jp-gui_11 gui">
+					<div class="slider" id="slider11"></div>
+				</div>
+			</div>
+			
+			<div class="sound">
+				<div id="sound12"></div>
+				<div id="cover12" class="cover" data-title=''>
+					<img src="img/cover/08.svg" alt="Music box" />
+				</div>
+				<div class="jp-gui_12 gui">
+					<div class="slider" id="slider12"></div>
+				</div>
+			</div>
+			
+			<div class="sound">
+				<div id="sound13"></div>
+				<div id="cover13" class="cover" data-title=''>
+					<img src="img/cover/05.svg" alt="Ghost child" />
+				</div>
+				<div class="jp-gui_13 gui">
+					<div class="slider" id="slider13"></div>
+				</div>
+			</div>
+			
+			<div class="sound">
+				<div id="sound14"></div>
+				<div id="cover14" class="cover" data-title=''>
+					<img src="img/cover/07.svg" alt="Steps" />
+				</div>
+				<div class="jp-gui_14 gui">
+					<div class="slider" id="slider14"></div>
+				</div>
+			</div>
+			
+			<div class="clear"></div>
+			
+			<hr>
+			
+			<div id="footer">
+			
+			<p>Idea of Horrorli is based on the beautiful <a href="http://www.noisli.com/" target="_BLANK" title="Noisli">Noisli</a>.<br />All sound clips are from <a href="http://www.freesound.org/" target="_BLANK" title="Freesound.org">Freesound.org</a><br /> and hosted by <a href="https://soundcloud.com/" target="_BLANK" title="Soundcloud.com">Soundcloud.com</a>. Thanks.</p>
+
+			<p class="center">
+				created by<br>
+				<a href="http://www.fps.hu/english" title="fps webagency - create and joy" target="_BLANK"><img src="img/fps.svg" title="fps webagency" alt="fps - create and joy"></a>
+			</p>
+			
+			</div>
+			
+		</div>
+		
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-47549371-1', 'fps.hu');
+		  ga('send', 'pageview');
+
+		</script>
+		
+	</body>
+</html>

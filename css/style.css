@@ -1,0 +1,420 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 130%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background: #000;
+	font-family: 'Varela Round', sans-serif;
+}
+
+.clear {
+	clear: both;
+}
+
+#wrapper {
+	width: 560px;
+	margin: 0 auto;
+	padding: 75px 0;
+}
+
+#head {
+	text-align: center;
+	margin: 20px 0 100px;
+	position: relative;	
+}
+
+#head h1 {
+	width: 119px;
+	height: 32px;
+	background-image: url(/img/horrorli.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	text-indent: -9999px;
+	margin: 0 auto;
+	position: relative;
+}
+
+body.nosvg #head h1 {
+	background-image: url(img/horrorli.png);
+}
+
+.blood {
+	width: 6px;
+	height: 9px;
+	background-image: url(/img/blood.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	position: absolute;
+}
+
+body.nosvg .blood {
+	background-image: url(img/blood.png);
+}
+
+.blood.one {
+	top: 17px;
+	left: 0px;
+    z-index: -1;
+    animation-name: animateBloodOne;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    /*Safari and Chrome: */
+    -webkit-animation-name: animateBloodOne;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    /* Firefox */
+    -moz-animation-name: animateBloodOne;
+    -moz-animation-duration: 15s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-delay: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-play-state: running;
+}
+
+@keyframes animateBloodOne{
+    0%   {top: 15px; opacity: 1;}
+    10%  {top: 18px;}
+    30%  {top: 23px;}
+    31%  {top: 128px; opacity: 1;}
+    32%  {top: 131px; opacity: 0;}
+    100% {top: 131px; opacity: 0;}
+}
+@-webkit-keyframes animateBloodOne{
+    0%   {top: 15px; opacity: 1;}
+    10%  {top: 18px;}
+    30%  {top: 23px;}
+    31%  {top: 128px; opacity: 1;}
+    32%  {top: 131px; opacity: 0;}
+    100% {top: 131px; opacity: 0;}
+}
+@-moz-keyframes animateBloodOne{
+    0%   {top: 15px; opacity: 1;}
+    10%  {top: 18px;}
+    30%  {top: 23px;}
+    31%  {top: 128px; opacity: 1;}
+    32%  {top: 131px; opacity: 0;}
+    100% {top: 131px; opacity: 0;}
+}
+
+.blood.two {
+	top: 15px;
+	left: 44px;
+    z-index: -1;
+    animation-name: animateBloodTwo;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    /*Safari and Chrome: */
+    -webkit-animation-name: animateBloodTwo;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    /* Firefox */
+    -moz-animation-name: animateBloodTwo;
+    -moz-animation-duration: 7s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-delay: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-play-state: running;
+}
+
+@keyframes animateBloodTwo{
+    0%   {top: 15px; opacity: 1;}
+    10%  {top: 18px;}
+    60%  {top: 23px;}
+    62%  {top: 128px; opacity: 1;}
+    63%  {top: 131px; opacity: 0;}
+    100% {top: 131px; opacity: 0;}
+}
+@-webkit-keyframes animateBloodTwo{
+    0%   {top: 15px; opacity: 1;}
+    10%  {top: 18px;}
+    60%  {top: 23px;}
+    62%  {top: 128px; opacity: 1;}
+    63%  {top: 131px; opacity: 0;}
+    100% {top: 131px; opacity: 0;}
+}
+@-moz-keyframes animateBloodTwo{
+    0%   {top: 15px; opacity: 1;}
+    10%  {top: 18px;}
+    60%  {top: 23px;}
+    62%  {top: 128px; opacity: 1;}
+    63%  {top: 131px; opacity: 0;}
+    100% {top: 131px; opacity: 0;}
+}
+
+.blood.three {
+	top: 15px;
+	left: 92px;
+    z-index: -1;
+    animation-name: animateBloodThree;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    /*Safari and Chrome: */
+    -webkit-animation-name: animateBloodThree;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    /* Firefox */
+    -moz-animation-name: animateBloodThree;
+    -moz-animation-duration: 12s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-play-state: running;
+}
+
+@keyframes animateBloodThree{
+    0%   {top: 15px; opacity: 1;}
+    10%  {top: 18px;}
+    60%  {top: 23px;}
+    62%  {top: 128px; opacity: 1;}
+    63%  {top: 131px; opacity: 0;}
+    100% {top: 131px; opacity: 0;}
+}
+@-webkit-keyframes animateBloodThree{
+    0%   {top: 15px; opacity: 1;}
+    10%  {top: 18px;}
+    60%  {top: 23px;}
+    62%  {top: 128px; opacity: 1;}
+    63%  {top: 131px; opacity: 0;}
+    100% {top: 131px; opacity: 0;}
+}
+@-moz-keyframes animateBloodThree{
+    0%   {top: 15px; opacity: 1;}
+    10%  {top: 18px;}
+    60%  {top: 23px;}
+    62%  {top: 128px; opacity: 1;}
+    63%  {top: 131px; opacity: 0;}
+    100% {top: 131px; opacity: 0;}
+}
+
+#share { 
+	text-align: center;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+#share *{
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+}
+
+hr {
+	background: #A02721;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border: 0;
+	height: 5px;
+	width: 90%;
+	margin: 30px auto 25px;
+}
+
+.sound {
+	width: 50%;
+	padding: 0 80px;
+	height: 250px;
+	float: left;
+}
+
+.cover img {
+	width: 120px;
+	height: auto;
+	opacity: 0.5;
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+.cover.play img {
+	opacity: 1;
+}
+
+.gui {
+	display: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background: #A02721;
+	height: 6px;
+	padding-right: 24px;
+}
+
+.ui-slider-horizontal {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 20px auto 0;
+}
+
+.ui-slider-range {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background: #A02721;
+	height: 6px;
+}
+
+.ui-slider-handle {
+	padding: 7px;
+	display: inline-block;
+	position: absolute;
+	top: -9px;
+	outline: none;
+	display: inline-block;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 7px;
+	background: #000;
+	border: 5px solid #A02721;
+	/*margin-left: -12px;*/
+}
+
+.ui-tooltip {
+	padding: 8px;
+	position: absolute;
+	z-index: 9999;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#footer {
+	color: #fff;
+	padding: 0px 75px 0;
+	line-height: 200%;
+	text-align: center;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+#footer a { 
+	color: #fff;
+	text-decoratin: underline;
+	transition: all 0.5s ease;
+}
+
+#footer a:hover {
+	color: #A02721;
+}
+
+p {
+	padding-bottom: 10px;
+}
+
+.center {
+	text-align: center;
+	padding-top: 30px;
+}
+
+@media screen and (max-width:599px) {
+	#wrapper {
+		width: 100%;
+		padding: 30px 0;
+	}
+	
+	#head {
+		margin-bottom: 55px;
+	}
+	
+	#share {
+		margin-bottom: 30px;
+	}
+	
+	.sound {
+		width: 50%;
+		padding: 5%;
+		height: auto;
+	}
+	
+	.cover img{
+		width: 100%;
+	}
+	
+	hr {
+		width: 90%;
+	}
+	
+	.ui-tooltip,
+	.gui {
+		display: none !important;
+	}
+	
+	#footer {
+		padding: 0 5%;
+	}
+}
